@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		286E8A11286EEE0FFB3CFB22 /* Pods_AlcoGuideTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155D406016000436D83DF544 /* Pods_AlcoGuideTests.framework */; };
+		ACE72A7D6881D4FEEFDC1DD2 /* Pods_AlcoGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC8870563CCE4B62AAA6F6C /* Pods_AlcoGuide.framework */; };
+		E6536C284C9B6F61866A376A /* Pods_AlcoGuide_AlcoGuideUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2F336F489A07AF77E13234 /* Pods_AlcoGuide_AlcoGuideUITests.framework */; };
+		E97DDA0D26A8AF6300444A24 /* GetDrinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97DDA0C26A8AF6300444A24 /* GetDrinks.swift */; };
+		E9D865C326A8635500DFB672 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D865C226A8635500DFB672 /* AppDelegate.swift */; };
+		E9D865C526A8635500DFB672 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D865C426A8635500DFB672 /* SceneDelegate.swift */; };
+		E9D865CC26A8635600DFB672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D865CB26A8635600DFB672 /* Assets.xcassets */; };
+		E9D865CF26A8635600DFB672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D865CD26A8635600DFB672 /* LaunchScreen.storyboard */; };
+		E9D865DA26A8635700DFB672 /* AlcoGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D865D926A8635700DFB672 /* AlcoGuideTests.swift */; };
+		E9D865E526A8635700DFB672 /* AlcoGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D865E426A8635700DFB672 /* AlcoGuideUITests.swift */; };
+		E9D865F926A865DB00DFB672 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D865F726A865DB00DFB672 /* TableView.swift */; };
+		E9D865FA26A865DB00DFB672 /* TableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D865F826A865DB00DFB672 /* TableView.xib */; };
+		E9D865FF26A8682A00DFB672 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D865FD26A8682A00DFB672 /* CellView.swift */; };
+		E9D8660026A8682A00DFB672 /* CellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D865FE26A8682A00DFB672 /* CellView.xib */; };
+		E9D8660326A86A3100DFB672 /* DrinksDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8660126A86A3100DFB672 /* DrinksDetailView.swift */; };
+		E9D8660426A86A3100DFB672 /* DrinksDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D8660226A86A3100DFB672 /* DrinksDetailView.xib */; };
+		E9D8660826A86F9500DFB672 /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8660726A86F9500DFB672 /* Drinks.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9D865D626A8635700DFB672 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D865B726A8635500DFB672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9D865BE26A8635500DFB672;
+			remoteInfo = AlcoGuide;
+		};
+		E9D865E126A8635700DFB672 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D865B726A8635500DFB672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9D865BE26A8635500DFB672;
+			remoteInfo = AlcoGuide;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		155D406016000436D83DF544 /* Pods_AlcoGuideTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlcoGuideTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC8870563CCE4B62AAA6F6C /* Pods_AlcoGuide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlcoGuide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9286B6ED4C35101F10844C3C /* Pods-AlcoGuideTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoGuideTests.release.xcconfig"; path = "Target Support Files/Pods-AlcoGuideTests/Pods-AlcoGuideTests.release.xcconfig"; sourceTree = "<group>"; };
+		A57A828D35361326E39C5849 /* Pods-AlcoGuide-AlcoGuideUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoGuide-AlcoGuideUITests.debug.xcconfig"; path = "Target Support Files/Pods-AlcoGuide-AlcoGuideUITests/Pods-AlcoGuide-AlcoGuideUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF2F336F489A07AF77E13234 /* Pods_AlcoGuide_AlcoGuideUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlcoGuide_AlcoGuideUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA479B9F2753E0052A9718A /* Pods-AlcoGuideTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoGuideTests.debug.xcconfig"; path = "Target Support Files/Pods-AlcoGuideTests/Pods-AlcoGuideTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C295717CFD9FB1374858B507 /* Pods-AlcoGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoGuide.release.xcconfig"; path = "Target Support Files/Pods-AlcoGuide/Pods-AlcoGuide.release.xcconfig"; sourceTree = "<group>"; };
+		CD6FEF2F95223B1C1CDD448A /* Pods-AlcoGuide-AlcoGuideUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoGuide-AlcoGuideUITests.release.xcconfig"; path = "Target Support Files/Pods-AlcoGuide-AlcoGuideUITests/Pods-AlcoGuide-AlcoGuideUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D6A520D667C3D5CB2D2D5D16 /* Pods-AlcoGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoGuide.debug.xcconfig"; path = "Target Support Files/Pods-AlcoGuide/Pods-AlcoGuide.debug.xcconfig"; sourceTree = "<group>"; };
+		E97DDA0C26A8AF6300444A24 /* GetDrinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDrinks.swift; sourceTree = SOURCE_ROOT; };
+		E9D865BF26A8635500DFB672 /* AlcoGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlcoGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D865C226A8635500DFB672 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9D865C426A8635500DFB672 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E9D865CB26A8635600DFB672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9D865CE26A8635600DFB672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9D865D026A8635600DFB672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9D865D526A8635700DFB672 /* AlcoGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlcoGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D865D926A8635700DFB672 /* AlcoGuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoGuideTests.swift; sourceTree = "<group>"; };
+		E9D865DB26A8635700DFB672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9D865E026A8635700DFB672 /* AlcoGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlcoGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D865E426A8635700DFB672 /* AlcoGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoGuideUITests.swift; sourceTree = "<group>"; };
+		E9D865E626A8635700DFB672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9D865F726A865DB00DFB672 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		E9D865F826A865DB00DFB672 /* TableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableView.xib; sourceTree = "<group>"; };
+		E9D865FD26A8682A00DFB672 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		E9D865FE26A8682A00DFB672 /* CellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellView.xib; sourceTree = "<group>"; };
+		E9D8660126A86A3100DFB672 /* DrinksDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksDetailView.swift; sourceTree = "<group>"; };
+		E9D8660226A86A3100DFB672 /* DrinksDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinksDetailView.xib; sourceTree = "<group>"; };
+		E9D8660726A86F9500DFB672 /* Drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9D865BC26A8635500DFB672 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE72A7D6881D4FEEFDC1DD2 /* Pods_AlcoGuide.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D865D226A8635700DFB672 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286E8A11286EEE0FFB3CFB22 /* Pods_AlcoGuideTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D865DD26A8635700DFB672 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6536C284C9B6F61866A376A /* Pods_AlcoGuide_AlcoGuideUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E147A044A43142F1D122F78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BC8870563CCE4B62AAA6F6C /* Pods_AlcoGuide.framework */,
+				AF2F336F489A07AF77E13234 /* Pods_AlcoGuide_AlcoGuideUITests.framework */,
+				155D406016000436D83DF544 /* Pods_AlcoGuideTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96FE1123832AF5720F99585C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6A520D667C3D5CB2D2D5D16 /* Pods-AlcoGuide.debug.xcconfig */,
+				C295717CFD9FB1374858B507 /* Pods-AlcoGuide.release.xcconfig */,
+				A57A828D35361326E39C5849 /* Pods-AlcoGuide-AlcoGuideUITests.debug.xcconfig */,
+				CD6FEF2F95223B1C1CDD448A /* Pods-AlcoGuide-AlcoGuideUITests.release.xcconfig */,
+				BFA479B9F2753E0052A9718A /* Pods-AlcoGuideTests.debug.xcconfig */,
+				9286B6ED4C35101F10844C3C /* Pods-AlcoGuideTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E9D865B626A8635500DFB672 = {
+			isa = PBXGroup;
+			children = (
+				E9D865C126A8635500DFB672 /* AlcoGuide */,
+				E9D865D826A8635700DFB672 /* AlcoGuideTests */,
+				E9D865E326A8635700DFB672 /* AlcoGuideUITests */,
+				E9D865C026A8635500DFB672 /* Products */,
+				96FE1123832AF5720F99585C /* Pods */,
+				1E147A044A43142F1D122F78 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9D865C026A8635500DFB672 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9D865BF26A8635500DFB672 /* AlcoGuide.app */,
+				E9D865D526A8635700DFB672 /* AlcoGuideTests.xctest */,
+				E9D865E026A8635700DFB672 /* AlcoGuideUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9D865C126A8635500DFB672 /* AlcoGuide */ = {
+			isa = PBXGroup;
+			children = (
+				E9D8660626A86F7200DFB672 /* Services */,
+				E9D8660526A86F6200DFB672 /* Models */,
+				E9D865D026A8635600DFB672 /* Info.plist */,
+				E9D865F626A8656E00DFB672 /* StartConfigs */,
+				E9D865F526A864C900DFB672 /* DrinksDetail */,
+				E9D865F426A864B900DFB672 /* Cell */,
+				E9D865F226A8648D00DFB672 /* Table */,
+			);
+			path = AlcoGuide;
+			sourceTree = "<group>";
+		};
+		E9D865D826A8635700DFB672 /* AlcoGuideTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9D865D926A8635700DFB672 /* AlcoGuideTests.swift */,
+				E9D865DB26A8635700DFB672 /* Info.plist */,
+			);
+			path = AlcoGuideTests;
+			sourceTree = "<group>";
+		};
+		E9D865E326A8635700DFB672 /* AlcoGuideUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9D865E426A8635700DFB672 /* AlcoGuideUITests.swift */,
+				E9D865E626A8635700DFB672 /* Info.plist */,
+			);
+			path = AlcoGuideUITests;
+			sourceTree = "<group>";
+		};
+		E9D865F226A8648D00DFB672 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				E9D865F726A865DB00DFB672 /* TableView.swift */,
+				E9D865F826A865DB00DFB672 /* TableView.xib */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		E9D865F426A864B900DFB672 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E9D865FD26A8682A00DFB672 /* CellView.swift */,
+				E9D865FE26A8682A00DFB672 /* CellView.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E9D865F526A864C900DFB672 /* DrinksDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E9D8660126A86A3100DFB672 /* DrinksDetailView.swift */,
+				E9D8660226A86A3100DFB672 /* DrinksDetailView.xib */,
+			);
+			path = DrinksDetail;
+			sourceTree = "<group>";
+		};
+		E9D865F626A8656E00DFB672 /* StartConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				E9D865C226A8635500DFB672 /* AppDelegate.swift */,
+				E9D865C426A8635500DFB672 /* SceneDelegate.swift */,
+				E9D865CB26A8635600DFB672 /* Assets.xcassets */,
+				E9D865CD26A8635600DFB672 /* LaunchScreen.storyboard */,
+			);
+			path = StartConfigs;
+			sourceTree = "<group>";
+		};
+		E9D8660526A86F6200DFB672 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E9D8660726A86F9500DFB672 /* Drinks.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E9D8660626A86F7200DFB672 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E97DDA0C26A8AF6300444A24 /* GetDrinks.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9D865BE26A8635500DFB672 /* AlcoGuide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9D865E926A8635700DFB672 /* Build configuration list for PBXNativeTarget "AlcoGuide" */;
+			buildPhases = (
+				9C5035CD9239BA6ECA4B8AB6 /* [CP] Check Pods Manifest.lock */,
+				E9D865BB26A8635500DFB672 /* Sources */,
+				E9D865BC26A8635500DFB672 /* Frameworks */,
+				E9D865BD26A8635500DFB672 /* Resources */,
+				85C792C198E37A1BA18DE72C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlcoGuide;
+			productName = AlcoGuide;
+			productReference = E9D865BF26A8635500DFB672 /* AlcoGuide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9D865D426A8635700DFB672 /* AlcoGuideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9D865EC26A8635700DFB672 /* Build configuration list for PBXNativeTarget "AlcoGuideTests" */;
+			buildPhases = (
+				5DD9CFDE8F3A66AE01C6F9EA /* [CP] Check Pods Manifest.lock */,
+				E9D865D126A8635700DFB672 /* Sources */,
+				E9D865D226A8635700DFB672 /* Frameworks */,
+				E9D865D326A8635700DFB672 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9D865D726A8635700DFB672 /* PBXTargetDependency */,
+			);
+			name = AlcoGuideTests;
+			productName = AlcoGuideTests;
+			productReference = E9D865D526A8635700DFB672 /* AlcoGuideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9D865DF26A8635700DFB672 /* AlcoGuideUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9D865EF26A8635700DFB672 /* Build configuration list for PBXNativeTarget "AlcoGuideUITests" */;
+			buildPhases = (
+				623E258BFBB35A43236075E1 /* [CP] Check Pods Manifest.lock */,
+				E9D865DC26A8635700DFB672 /* Sources */,
+				E9D865DD26A8635700DFB672 /* Frameworks */,
+				E9D865DE26A8635700DFB672 /* Resources */,
+				0C41A6D154DCB6874B73F57E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9D865E226A8635700DFB672 /* PBXTargetDependency */,
+			);
+			name = AlcoGuideUITests;
+			productName = AlcoGuideUITests;
+			productReference = E9D865E026A8635700DFB672 /* AlcoGuideUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9D865B726A8635500DFB672 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					E9D865BE26A8635500DFB672 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					E9D865D426A8635700DFB672 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = E9D865BE26A8635500DFB672;
+					};
+					E9D865DF26A8635700DFB672 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = E9D865BE26A8635500DFB672;
+					};
+				};
+			};
+			buildConfigurationList = E9D865BA26A8635500DFB672 /* Build configuration list for PBXProject "AlcoGuide" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9D865B626A8635500DFB672;
+			productRefGroup = E9D865C026A8635500DFB672 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9D865BE26A8635500DFB672 /* AlcoGuide */,
+				E9D865D426A8635700DFB672 /* AlcoGuideTests */,
+				E9D865DF26A8635700DFB672 /* AlcoGuideUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9D865BD26A8635500DFB672 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D8660026A8682A00DFB672 /* CellView.xib in Resources */,
+				E9D865FA26A865DB00DFB672 /* TableView.xib in Resources */,
+				E9D8660426A86A3100DFB672 /* DrinksDetailView.xib in Resources */,
+				E9D865CF26A8635600DFB672 /* LaunchScreen.storyboard in Resources */,
+				E9D865CC26A8635600DFB672 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D865D326A8635700DFB672 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D865DE26A8635700DFB672 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C41A6D154DCB6874B73F57E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlcoGuide-AlcoGuideUITests/Pods-AlcoGuide-AlcoGuideUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlcoGuide-AlcoGuideUITests/Pods-AlcoGuide-AlcoGuideUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlcoGuide-AlcoGuideUITests/Pods-AlcoGuide-AlcoGuideUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DD9CFDE8F3A66AE01C6F9EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlcoGuideTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		623E258BFBB35A43236075E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlcoGuide-AlcoGuideUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85C792C198E37A1BA18DE72C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlcoGuide/Pods-AlcoGuide-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlcoGuide/Pods-AlcoGuide-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlcoGuide/Pods-AlcoGuide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C5035CD9239BA6ECA4B8AB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlcoGuide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9D865BB26A8635500DFB672 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D8660826A86F9500DFB672 /* Drinks.swift in Sources */,
+				E9D8660326A86A3100DFB672 /* DrinksDetailView.swift in Sources */,
+				E9D865FF26A8682A00DFB672 /* CellView.swift in Sources */,
+				E9D865C326A8635500DFB672 /* AppDelegate.swift in Sources */,
+				E97DDA0D26A8AF6300444A24 /* GetDrinks.swift in Sources */,
+				E9D865F926A865DB00DFB672 /* TableView.swift in Sources */,
+				E9D865C526A8635500DFB672 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D865D126A8635700DFB672 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D865DA26A8635700DFB672 /* AlcoGuideTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D865DC26A8635700DFB672 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D865E526A8635700DFB672 /* AlcoGuideUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9D865D726A8635700DFB672 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9D865BE26A8635500DFB672 /* AlcoGuide */;
+			targetProxy = E9D865D626A8635700DFB672 /* PBXContainerItemProxy */;
+		};
+		E9D865E226A8635700DFB672 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9D865BE26A8635500DFB672 /* AlcoGuide */;
+			targetProxy = E9D865E126A8635700DFB672 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9D865CD26A8635600DFB672 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9D865CE26A8635600DFB672 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9D865E726A8635700DFB672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E9D865E826A8635700DFB672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9D865EA26A8635700DFB672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A520D667C3D5CB2D2D5D16 /* Pods-AlcoGuide.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlcoGuide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pavel.AlcoGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9D865EB26A8635700DFB672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C295717CFD9FB1374858B507 /* Pods-AlcoGuide.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlcoGuide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pavel.AlcoGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9D865ED26A8635700DFB672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFA479B9F2753E0052A9718A /* Pods-AlcoGuideTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlcoGuideTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pavel.AlcoGuideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlcoGuide.app/AlcoGuide";
+			};
+			name = Debug;
+		};
+		E9D865EE26A8635700DFB672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9286B6ED4C35101F10844C3C /* Pods-AlcoGuideTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlcoGuideTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pavel.AlcoGuideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlcoGuide.app/AlcoGuide";
+			};
+			name = Release;
+		};
+		E9D865F026A8635700DFB672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A57A828D35361326E39C5849 /* Pods-AlcoGuide-AlcoGuideUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlcoGuideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pavel.AlcoGuideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlcoGuide;
+			};
+			name = Debug;
+		};
+		E9D865F126A8635700DFB672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD6FEF2F95223B1C1CDD448A /* Pods-AlcoGuide-AlcoGuideUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlcoGuideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pavel.AlcoGuideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlcoGuide;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9D865BA26A8635500DFB672 /* Build configuration list for PBXProject "AlcoGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D865E726A8635700DFB672 /* Debug */,
+				E9D865E826A8635700DFB672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9D865E926A8635700DFB672 /* Build configuration list for PBXNativeTarget "AlcoGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D865EA26A8635700DFB672 /* Debug */,
+				E9D865EB26A8635700DFB672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9D865EC26A8635700DFB672 /* Build configuration list for PBXNativeTarget "AlcoGuideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D865ED26A8635700DFB672 /* Debug */,
+				E9D865EE26A8635700DFB672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9D865EF26A8635700DFB672 /* Build configuration list for PBXNativeTarget "AlcoGuideUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D865F026A8635700DFB672 /* Debug */,
+				E9D865F126A8635700DFB672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9D865B726A8635500DFB672 /* Project object */;
+}

@@ -9,11 +9,20 @@ import UIKit
 
 class TableView: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        setTitle()
 
         // Do any additional setup after loading the view.
     }
+    func setTitle(){
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black]
+        self.navigationItem.title = "Drinks"
+    }
+    
+    
 
 
     /*

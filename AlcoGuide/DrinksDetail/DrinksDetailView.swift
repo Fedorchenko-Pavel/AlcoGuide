@@ -9,6 +9,9 @@ import UIKit
 
 class DrinksDetailView: UIViewController {
 
+    @IBOutlet weak var drinkImage: UIImageView!
+    @IBOutlet weak var drinkName: UILabel!
+    @IBOutlet weak var drinkRecipe: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 

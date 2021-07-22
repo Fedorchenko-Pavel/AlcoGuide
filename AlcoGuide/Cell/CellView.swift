@@ -9,6 +9,8 @@ import UIKit
 
 class CellView: UITableViewCell {
 
+    @IBOutlet weak var drinkName: UILabel!
+    @IBOutlet weak var drinkImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -1,0 +1,6 @@
+framework module Pods_AlcoGuide {
+  umbrella header "Pods-AlcoGuide-umbrella.h"
+
+  export *
+  module * { export * }
+}
