@@ -13,7 +13,8 @@ class CellView: UITableViewCell {
     @IBOutlet weak var drinkImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        drinkImage.layer.cornerRadius = 20
+        drinkImage.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

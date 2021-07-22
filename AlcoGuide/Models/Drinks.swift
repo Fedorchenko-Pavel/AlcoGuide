@@ -8,16 +8,17 @@
 import Foundation
 
 struct Coctail : Codable {
-    let coctailName : String
-    let coctailImage: String
-    let coctailRecipe: String
+    var coctailName : String
+    var coctailImage: String
+    var coctailRecipe: String
     
-    enum CodingKeys: String, CodingKeys{
+    enum CodingKeys: String, CodingKey {
+        
         case coctailName = "strDrink"
         case coctailImage = "strDrinkThumb"
         case coctailRecipe = "strInstructions"
     }
-
+    
 }
 struct DrinksList : Codable{
     let drinks: [Coctail]

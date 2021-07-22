@@ -151,7 +151,7 @@
 		E9D865C126A8635500DFB672 /* AlcoGuide */ = {
 			isa = PBXGroup;
 			children = (
-				E9D8660626A86F7200DFB672 /* Services */,
+				E9D8660626A86F7200DFB672 /* Service */,
 				E9D8660526A86F6200DFB672 /* Models */,
 				E9D865D026A8635600DFB672 /* Info.plist */,
 				E9D865F626A8656E00DFB672 /* StartConfigs */,
@@ -226,12 +226,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		E9D8660626A86F7200DFB672 /* Services */ = {
+		E9D8660626A86F7200DFB672 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				E97DDA0C26A8AF6300444A24 /* GetDrinks.swift */,
 			);
-			path = Services;
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -8,13 +8,25 @@
 import UIKit
 
 class TableView: UIViewController {
-
+    var drinks = [Coctail]()
+    let service = GetDrinks()
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setTitle()
-
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "CellView", bundle: nil), forCellReuseIdentifier: "CellView")
+        service.getDrinks(completion: {[weak self](drinks, status, message) in
+            if status {
+            guard let self = self else {return}
+            guard let drinks = drinks as? [Coctail] else {return}
+            self.drinks = drinks
+            self.tableView.reloadData()
+            }
+            })
+        
     }
     func setTitle(){
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -23,16 +35,43 @@ class TableView: UIViewController {
     }
     
     
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+extension TableView:UITableViewDelegate,UITableViewDataSource{
+   
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.drinks.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellView") as! CellView
+        
+        cell.drinkName.text = drinks[indexPath.row].coctailName
+        cell.drinkImage.image = UIImage(named: "image4")
+        
+
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+                let drinksDetailVC = DrinksDetailView(nibName: "DrinksDetailView", bundle: nil)
+        drinksDetailVC.drinkName.text = drinks[indexPath.row].coctailName
+        drinksDetailVC.drinkRecipe.text = drinks[indexPath.row].coctailRecipe
+        //drinksDetailVC.drinkImage = drinks[indexPath.row].coctailImage
+        
+        navigationController?.pushViewController(drinksDetailVC, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+            if editingStyle == .delete {
+                tableView.beginUpdates()
+                drinks.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+                tableView.endUpdates()
+            }
+        }
+}
+
