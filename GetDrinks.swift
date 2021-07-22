@@ -24,5 +24,13 @@ class GetDrinks {
             }
         }
     }
+    func getImage(imageStr: String, completion: @escaping (UIImage) -> ()){
+        AF.download(imageStr).responseData { response in
+            if let data = response.value {
+                let image = UIImage(data: data)
+                 completion(image!)
+            }
+        }
+    }
     
 }

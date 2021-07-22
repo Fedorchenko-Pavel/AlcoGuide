@@ -49,7 +49,10 @@ extension TableView:UITableViewDelegate,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellView") as! CellView
         
         cell.drinkName.text = drinks[indexPath.row].coctailName
-        cell.drinkImage.image = UIImage(named: "image4")
+        service.getImage(imageStr: drinks[indexPath.row].coctailImage) { image in
+            cell.drinkImage.image = image
+        }
+       
         
 
         return cell
@@ -58,9 +61,11 @@ extension TableView:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
                 let drinksDetailVC = DrinksDetailView(nibName: "DrinksDetailView", bundle: nil)
-        drinksDetailVC.drinkName.text = drinks[indexPath.row].coctailName
-        drinksDetailVC.drinkRecipe.text = drinks[indexPath.row].coctailRecipe
-        //drinksDetailVC.drinkImage = drinks[indexPath.row].coctailImage
+        drinksDetailVC.drinkNameStr = drinks[indexPath.row].coctailName
+        drinksDetailVC.drinkRecipeStr = drinks[indexPath.row].coctailRecipe
+        service.getImage(imageStr: drinks[indexPath.row].coctailImage) { image in
+            drinksDetailVC.drinkImageUIImage = image
+        }
         
         navigationController?.pushViewController(drinksDetailVC, animated: true)
     }
