@@ -7,11 +7,11 @@
 
 import Foundation
 import Alamofire
-class GetDrinks {
+class Requestor {
     
     let drinksURL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=rum"
     
-    func getDrinks(completion: @escaping (_ drinks:[Coctail],_ status: Bool, _ messasge:String) -> ()){
+    func getDrinksRequest(completion: @escaping (_ drinks:[Coctail],_ status: Bool, _ messasge:String) -> ()){
         AF.request(drinksURL).response { response in
             guard let data = response.data else {return}
             do {
@@ -24,7 +24,7 @@ class GetDrinks {
             }
         }
     }
-    func getImage(imageStr: String, completion: @escaping (UIImage) -> ()){
+    func getImageRequest(imageStr: String, completion: @escaping (UIImage) -> ()){
         AF.download(imageStr).responseData { response in
             if let data = response.value {
                 let image = UIImage(data: data)

@@ -9,16 +9,16 @@ import UIKit
 
 class TableView: UIViewController {
     var drinks = [Coctail]()
-    let service = GetDrinks()
+    let service = Requestor()
     @IBOutlet weak var tableView: UITableView!
-    
+    //var drinksImages: [UIImage] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         setTitle()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "CellView", bundle: nil), forCellReuseIdentifier: "CellView")
-        service.getDrinks(completion: {[weak self](drinks, status, message) in
+        service.getDrinksRequest(completion: {[weak self](drinks, status, message) in
             if status {
             guard let self = self else {return}
             guard let drinks = drinks as? [Coctail] else {return}
@@ -35,6 +35,7 @@ class TableView: UIViewController {
     }
     
     
+    
 }
 extension TableView:UITableViewDelegate,UITableViewDataSource{
    
@@ -49,8 +50,9 @@ extension TableView:UITableViewDelegate,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellView") as! CellView
         
         cell.drinkName.text = drinks[indexPath.row].coctailName
-        service.getImage(imageStr: drinks[indexPath.row].coctailImage) { image in
+        service.getImageRequest(imageStr: drinks[indexPath.row].coctailImage) { image in
             cell.drinkImage.image = image
+            
         }
        
         
@@ -60,13 +62,15 @@ extension TableView:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-                let drinksDetailVC = DrinksDetailView(nibName: "DrinksDetailView", bundle: nil)
+        let drinksDetailVC = DrinksDetailView(nibName: "DrinksDetailView", bundle: nil)
         drinksDetailVC.drinkNameStr = drinks[indexPath.row].coctailName
         drinksDetailVC.drinkRecipeStr = drinks[indexPath.row].coctailRecipe
-        service.getImage(imageStr: drinks[indexPath.row].coctailImage) { image in
-            drinksDetailVC.drinkImageUIImage = image
+       // drinksDetailVC.drinkImage.image = tableView.cellForRow(at: indexPath)?.imageView?.image
+        service.getImageRequest(imageStr: drinks[indexPath.row].coctailImage) { image in
+            drinksDetailVC.drinkImage.image = image
+
         }
-        
+        //drinksDetailVC.drinkImageUIImage = drinksImages[indexPath.row]
         navigationController?.pushViewController(drinksDetailVC, animated: true)
     }
     

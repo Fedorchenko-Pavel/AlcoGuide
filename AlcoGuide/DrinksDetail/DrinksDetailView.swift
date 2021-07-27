@@ -7,33 +7,25 @@
 
 import UIKit
 
-class DrinksDetailView: UIViewController {
+class DrinksDetailView: UIViewController, DrinksDetailViewProtocol {
 
     @IBOutlet weak var drinkImage: UIImageView!
     @IBOutlet weak var drinkName: UILabel!
     @IBOutlet weak var drinkRecipe: UILabel!
     
-    var drinkNameStr: String = ""
-    var drinkRecipeStr: String = ""
-    var drinkImageUIImage : UIImage 
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        drinkName.text = drinkNameStr
-        drinkRecipe.text = drinkRecipeStr
-        drinkImage.image = drinkImageUIImage
-
-        // Do any additional setup after loading the view.
+       
+    }
+    
+   
+    func setCoctailInfoToView(drinkName: String, drinkRecipe: String, drinkImage: UIImage){
+        self.drinkName.text = drinkName
+        self.drinkRecipe.text = drinkRecipe
+        self.drinkImage.image = drinkImage
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
-
-}
